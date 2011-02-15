@@ -1,0 +1,36 @@
+﻿Usuario
+    codigo
+    nick //username
+    password
+    nombre
+    apellido
+    email
+    tipo_usuario
+
+Cliente
+    razon_social
+    cod_usuario
+    tipo_documento
+    nro_documento
+    cod_provincia
+    localidad
+    codigo_postal
+    direccion
+    telefono
+    celular
+    sitio_web
+    cuil_cuit
+    es_cuit //si lo q se puso en el campo "cuil_cuit" es cuit y no cuil
+
+TipoUsuario
+    codigo
+    nombre
+    
+Provincias
+    codigo
+    nombre
+    
+Categoria
+    codigo 
+    nombre
+    
