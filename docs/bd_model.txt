@@ -8,6 +8,7 @@
     tipo_usuario
 
 Cliente
+    Plan_Contratado
     razon_social
     cod_usuario
     tipo_documento
@@ -22,6 +23,7 @@ Cliente
     cuil_cuit
     es_cuit //si lo q se puso en el campo "cuil_cuit" es cuit y no cuil
 
+// Solo existiran 2 o a lo sumo 3 tipos de usuarios, asi que hay que ver
 TipoUsuario
     codigo
     nombre
@@ -29,8 +31,33 @@ TipoUsuario
 Provincias
     codigo
     nombre
+
+// provincias estaria relacionado con cp
+Cp
+    codCp
+    Localidad
+    IdProvincia	
+    		
     
 Categoria
     codigo 
     nombre
-    
+
+Pagos
+    	CodPago	
+	codProducto
+	Cantidad
+	Costo
+	CodFormaPago
+
+Medio_pago	
+	codFormaPago
+	Nombre
+	Descripcion
+	usuario
+	otrosDatos //para medios como Dinero Mail o Mercado Pago
+// aun no termino para que envie pagos por Pay Pal
+	
+
+
+
